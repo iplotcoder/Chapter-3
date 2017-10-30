@@ -1,33 +1,40 @@
-
-/**
- * Write a description of class Palindrome here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
+// ***************************************************************
+//   Salary.java
+//
+//   Computes the amount of a raise and the new
+//   salary for an employee.  The current salary
+//   and a performance rating (a String: "Excellent",
+//   "Good" or "Poor") are input.
+// ***************************************************************
+ 
+import java.util.Scanner;
+import java.text.NumberFormat;
+ 
 public class Palindrome
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Palindrome
-     */
-    public Palindrome()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+   public static void main (String[] args)
+   {
+           String word;
+           
+           Scanner scan = new Scanner(System.in);
+           System.out.print ("Enter word: ");
+           word = scan.next();
+           length = word.length;
+           firstLetter = wordAt(0);
+           lastLetter = wordAt(length);
+           // Compute if palindrome
+           if (word.charAt(0) == word.charAt(word.lastIndexOf())) {
+               
+            }
+ 
+           
+ 
+           // Print the results
+           NumberFormat money = NumberFormat.getCurrencyInstance();
+           System.out.println();
+           System.out.println("Current Salary:           " + money.format(currentSalary));
+           System.out.println("Amount of your raise: " + money.format(raise));
+           System.out.println("Your new salary:          " + money.format(newSalary));
+           System.out.println();
+        }
 }
